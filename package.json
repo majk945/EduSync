@@ -2,7 +2,7 @@
   "name": "edusync",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://majk945.github.io/edusync/",
+  "homepage": "https://majk945.github.io/EduSync/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
