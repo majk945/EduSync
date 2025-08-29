@@ -1,8 +1,17 @@
-.main-elemnet{
+.main-element{
     background-color: #748D92;
     border-radius: 10px;
     
 }
 h2{
-    color: #D3D9D4;
+    color: #fff;
+}
+.img{
+    width: 200px;
+    height: 30%;
+}
+.img-carousel {
+    max-height: 400px;
+    width: 100%;
+    /* Remove object-fit: cover; */
 }

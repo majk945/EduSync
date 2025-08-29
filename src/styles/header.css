@@ -15,3 +15,12 @@ a{
     text-decoration: none;
     color: #212A31;
 }
+a:link, a:visited {
+    color: #212A31;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #212A31; /* alebo iná farba pri hover */
+    text-decoration: none;
+}
