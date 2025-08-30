@@ -1,26 +1,40 @@
-li{
+li {
     list-style-type: none;
     display: inline;
     padding-inline:10px;
+}
+
+.divNav {
+    background-color: #092635;
+    width: 100%;        
+    position: fixed;   
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
     
 }
-ul{
-    text-align: center;
+
+ul {
+    margin: 0;
     padding: 10px;
+    text-align: center;
+    width: 100%;
 }
-.divNav{
-    background-color:#D3D9D4;
-}
-a{
+
+a {
     text-decoration: none;
-    color: #212A31;
+    color: #E3FDFD;
+    transition: color 0.3s ease; 
+    font-size: 20px;
 }
+
 a:link, a:visited {
-    color: #212A31;
+    color: #fff;
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #212A31; /* alebo iná farba pri hover */
+    color: gray;
     text-decoration: none;
 }

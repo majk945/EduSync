@@ -1,17 +1,209 @@
-.main-element{
-    background-color: #748D92;
+/* Home.css */
+
+.content {
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+h1, h2, p {
+    color: #fff;
+    text-align: center;
+}
+.contentImg{
+    display: flex;
+    justify-content: center; /* horizontálne centrovanie */
+    align-items: center;     /* vertikálne centrovanie */
+}
+
+.h2Brand{
+    color: #fff;
+}
+.h5Brand{
+    padding-top: 10px;
+    color: #fff;
+}
+
+
+.brandMain {
+    max-width: 300px;
+    height: auto;
+}
+
+.grid .row .col{
+    border: solid white;
     border-radius: 10px;
     
 }
-h2{
-    color: #fff;
+.row .col{
+    margin: 10px;
 }
-.img{
-    width: 200px;
-    height: 30%;
+.btn-custom {
+    background-color: #9EC8B9 !important; 
+    color: #fff !important;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-inline: 10px;
 }
-.img-carousel {
-    max-height: 400px;
+
+.btn-custom:hover {
+    background-color: #85b59d !important;
+    color: #fff !important;
+}
+ @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                @keyframes float {
+                    0%, 100% { transform: translateY(0px); }
+                    50% { transform: translateY(-10px); }
+                }
+
+                @keyframes pulse-glow {
+                    0%, 100% { box-shadow: 0 0 20px rgba(94, 234, 212, 0.3); }
+                    50% { box-shadow: 0 0 40px rgba(94, 234, 212, 0.6); }
+                }
+
+                @keyframes gradient-shift {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+
+                .animate-fadeInUp {
+                    animation: fadeInUp 0.8s ease-out;
+                }
+
+                .animate-float {
+                    animation: float 3s ease-in-out infinite;
+                }
+
+                .animate-pulse-glow {
+                    animation: pulse-glow 2s ease-in-out infinite;
+                }
+
+                .animate-gradient {
+                    background-size: 200% 200%;
+                    animation: gradient-shift 3s ease infinite;
+                }
+
+                .feature-card {
+                    transition: all 0.3s ease;
+                    backdrop-filter: blur(10px);
+                }
+
+                .feature-card:hover {
+                    transform: translateY(-5px) scale(1.02);
+                }
+
+                .feature-card.active {
+                    transform: translateY(-8px) scale(1.05);
+                    box-shadow: 0 20px 40px rgba(94, 234, 212, 0.2);
+                }
+.btn-enhanced {
+    background: linear-gradient(135deg, #14b8a6, #06b6d4);
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    /* Remove object-fit: cover; */
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
 }
+
+.btn-enhanced:hover {
+    background: linear-gradient(135deg, #0d9488, #0891b2);
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 10px 25px rgba(20, 184, 166, 0.4);
+}
+
+.btn-enhanced:hover::before {
+    transform: translateX(100%);
+}
+
+/* Reset po hoveri */
+.btn-enhanced:not(:hover)::before {
+    transform: translateX(-100%);
+}
+
+
+                .btn-secondary {
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 2px solid rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    padding: 14px 30px;
+                    border-radius: 12px;
+                    margin: 0 8px;
+                    transition: all 0.3s ease;
+                }
+
+                .btn-secondary:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                    border-color: rgba(94, 234, 212, 0.5);
+                    transform: translateY(-2px);
+                }
+
+                .stats-card {
+                    background: rgba(255, 255, 255, 0.05);
+                    backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 16px;
+                    padding: 24px;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                }
+
+                .stats-card:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                    transform: translateY(-3px);
+                }
+
+                .floating-assistant {
+                    position: fixed;
+                    bottom: 30px;
+                    right: 30px;
+                    width: 60px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #14b8a6, #06b6d4);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+                    transition: all 0.3s ease;
+                    z-index: 1000;
+                }
+
+                .floating-assistant:hover {
+                    transform: scale(1.1) rotate(5deg);
+                    box-shadow: 0 12px 35px rgba(20, 184, 166, 0.6);
+                }
+
+                .brand-glow {
+                    text-shadow: 0 0 30px rgba(94, 234, 212, 0.5);
+                }
