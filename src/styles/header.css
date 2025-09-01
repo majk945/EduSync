@@ -1,40 +1,8 @@
-li {
-    list-style-type: none;
-    display: inline;
-    padding-inline:10px;
-}
-
-.divNav {
-    background-color: #092635;
-    width: 100%;        
-    position: fixed;   
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
-    
-}
-
-ul {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #E3FDFD;
-    transition: color 0.3s ease; 
-    font-size: 20px;
-}
-
-a:link, a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    color: gray;
-    text-decoration: none;
+.header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem;
 }
