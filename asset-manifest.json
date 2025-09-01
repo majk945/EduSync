@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/EduSync/static/css/main.7cc920bc.css",
-    "main.js": "/EduSync/static/js/main.da23a5f8.js",
+    "main.js": "/EduSync/static/js/main.8323b406.js",
     "index.html": "/EduSync/index.html",
     "main.7cc920bc.css.map": "/EduSync/static/css/main.7cc920bc.css.map",
-    "main.da23a5f8.js.map": "/EduSync/static/js/main.da23a5f8.js.map"
+    "main.8323b406.js.map": "/EduSync/static/js/main.8323b406.js.map"
   },
   "entrypoints": [
     "static/css/main.7cc920bc.css",
-    "static/js/main.da23a5f8.js"
+    "static/js/main.8323b406.js"
   ]
 }
