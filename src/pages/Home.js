@@ -129,11 +129,11 @@ export default function Home() {
                 {/* Social proof */}
                 <div className="stats-container mb-xl">
                     <div className="stats-card hover-stats">
-                        <div className="stats-number">1000+</div>
+                        <div className="stats-number">1</div>
                         <div className="stats-label">Aktívnych študentov</div>
                     </div>
                     <div className="stats-card hover-stats">
-                        <div className="stats-number">50+</div>
+                        <div className="stats-number">1</div>
                         <div className="stats-label">Škôl</div>
                     </div>
                     <div className="stats-card hover-stats">
